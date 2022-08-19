@@ -67,7 +67,8 @@ public class NumberNature {
 		return count;
 	}
 
-	public int checkNumberPerfectOrNot(int N) {
+	public int checkNumberPerfectOrNot(int N) { // sum of positive divisors == given number then it is perfect number.
+												// example :- 28 ==> 1 + 2 + 4 + 7 + 14 ==> perfect number.
 		int sum = 0;
 		for (int i = 1; i < N; i++) {
 			if (N % i == 0) {
@@ -95,7 +96,8 @@ public class NumberNature {
 		return count;
 	}
 
-	public boolean checkNumberIsPerfectSquareOrNot(int N) {
+	public boolean checkNumberIsPerfectSquareOrNot(int N) { // examples :- 3*3=9, 4*4=16, 9*9=81 ==> 9,16,81 are perfect
+															// squares.
 		int squareRootOfNumber = squareRootOfANumber(N);
 		return (squareRootOfNumber * squareRootOfNumber == N) ? true : false;
 	}
